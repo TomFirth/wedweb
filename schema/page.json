@@ -1,0 +1,41 @@
+{
+  "Main" : {
+    "special" : {
+      "type" : "Select",
+      "config" : {
+        "options" : [ "none", "rsvp", "contact", "directions", "hotels", "photos" ],
+        "default_value" : "none",
+        "label" : "Special"
+      }
+    },
+    "title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Title",
+        "placeholder" : "Title"
+      }
+    },
+    "content" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label" : "Content",
+        "placeholder" : "Words go here"
+      }
+    },
+    "background" : {
+      "type" : "Color",
+      "config" : {
+        "label" : "background"
+      }
+    },
+    "background_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "background"
+      }
+    }
+  }
+}

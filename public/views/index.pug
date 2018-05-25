@@ -1,0 +1,21 @@
+doctype html
+
+html(lang='en')
+  head
+    title Russell and Sam Lewis' Big Day!
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel="manifest", href="/manifest.json")
+    link(rel="apple-touch-icon", sizes="180x180", href="/images/favicon180x180.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="/images/favicon32x32.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="/images/favicon.png")
+    meta(name="theme-color", content="#ffffff")
+    style(type='text/css').
+      body, html {}
+  body
+    block main
+      header
+        h1 Russ and Sam's Big Day!
+      each section in content
+        section
+          h1=section.title
+          p=section.content
